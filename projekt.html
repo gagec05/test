@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <div id="hintergrundbild">
+        <img src="Bilder/Hintergrundbild.png" alt="hintergrundbild"> 
+    </div>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#start">Startseite</a></li>
+            <li><a href="#autos">Autovermietung</a></li>
+            <li><a href="#preise">Preisliste</a></li>
+            <li><a href="#formular">Anmeldung</a></li>
+        </ul>
+    </nav>
+    <section id="start">
+        <h1>Mein Html Projekt</h1>
+    
+        <b id="text">Ich habe ein sehr unpassendes Bild gewählt. Ich wollte das Thema HTML ein bisschen animieren.</b>
+    </section>
+
+    <section id="autos" class="inhalt">
+        <h2>Autovermietung</h2>
+        <p class="test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, laboriosam natus fugiat voluptatem cumque dolorum quisquam fugit voluptate cupiditate, nemo iusto! Sed aspernatur accusantium impedit unde dolor rerum aut tenetur consequatur non, cum necessitatibus expedita quos recusandae numquam corporis perferendis harum ea totam itaque deleniti tempore facere. Enim voluptatibus eaque atque ratione optio quisquam sapiente, facilis maxime eum consequuntur reprehenderit perferendis beatae tempora dignissimos suscipit aliquam in esse cum hic ipsa fuga quasi impedit! Exercitationem illum tenetur delectus quia doloremque eos, fugiat vel beatae temporibus quidem repellat id accusamus culpa. Distinctio commodi magni quis eaque! Corporis sapiente molestias accusantium ad maxime debitis repellat dolorem cumque minus ex soluta dicta, nisi magnam similique eius tenetur? Quo, ullam dolores! Quam labore dignissimos quia? Excepturi quidem inventore consequatur necessitatibus quas eveniet nesciunt odio earum temporibus ullam sunt qui, dolores nemo repellendus aspernatur iure optio voluptatum quaerat alias magni, cupiditate tempora harum sed a!</p>
+        <br>
+    
+        <div class="bild-container">
+            <div class="bild-item">
+                <img src="bilder/auto1.jpg" alt="hintergrundbild">
+                <p>650fr pro Tag</p>
+             </div>
+
+            <div class="bild-item">
+                <img src="bilder/auto2.jpg" alt="hintergrundbild">
+                <p>500fr pro Tag</p>
+             </div>
+
+             <div class="bild-item">
+                <img src="bilder/auto3.jpg" alt="hintergrundbild">
+                <p>300fr pro Tag</p>
+             </div>
+
+             <div class="bild-item">
+                <img src="bilder/auto4.jpg" alt="hintergrundbild">
+                <p>250fr pro Tag</p>
+             </div>
+        </div>
+        <div id="preise" class="miet-tabelle-container">
+            <table class="miet-tabelle">
+                <tr>
+                    <th>Fahrzeuge</th>
+                    <th>Preis pro Tag (CHF)</th>
+                    <th>Wochenpreis (CHF)</th>
+                    <th>Monatspreis (CHF)</th>
+                    <th>Kaution (CHF)</th>
+                </tr>
+
+                <tr>
+                    <td>Mercedes AMG GT</td>
+                    <td>650</td>
+                    <td>4200</td>
+                    <td>15000</td>
+                    <td>5000</td>
+                </tr>
+
+                <tr>
+                    <td>Lamborghini Huracan</td>
+                    <td>500</td>
+                    <td>3200</td>
+                    <td>12000</td>
+                    <td>8000</td>
+                </tr>
+
+                <tr>
+                    <td>Skoda Enyag</td>
+                    <td>300</td>
+                    <td>2000</td>
+                    <td>7500</td>
+                    <td>2000</td>
+                </tr>
+
+                <tr>
+                    <td>Mitsubishi Outlander</td>
+                    <td>250</td>
+                    <td>1700</td>
+                    <td>6000</td>
+                    <td>1500</td>
+                </tr>
+            </table>
+        </div>
+        
+        <form id="formular" method="post">
+        <fieldset class="formular"><legend>Anmeldung für Miete</legend>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Ihr Name">
+        </div>
+
+        <div>
+            <label for="vname">Vorname:</label>
+            <input type="text" name="vname" id="vname" placeholder="Ihr Vorname">
+        </div>
+
+        <div>
+            <label for="mail">E-Mail:</label>
+            <input type="email" name="mail" id="mail" placeholder="E-Mail-Adresse"placeholder="E-Mail-Adresse" required>
+            <label for="mail"></label>
+        </div>
+        
+        <div>
+            <label for="tel">Telefonnummer:</label>
+            <input type="text" name="tel" id="tel" placeholder="Ihre Telefonnummer">
+        </div>
+    
+        <div>
+            <label for="fahrzeug">Fahrzeug auswählen:</label>
+            <input type="text" name="fahrzeug" id="fahrzeug" placeholder="Gewünschtes Fahrzeug">
+        </div>
+    
+        <div>
+            <label for="mdauer">Mietdauer:</label>
+            <input type="number" name="mdauer" id="mdauer" placeholder="wie viele Tage">
+        </div>
+
+        <div>
+            <label for="adatum">Abholdatum:</label>
+            <input type="date" name="adatum" id="adatum">
+        </div>
+
+        <div>
+            <label for="rdatum">Rückgabedatum:</label>
+            <input type="date" name="rdatum" id="rdatum">
+        </div>
+        
+        <button type="submit">Absenden</button>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </fieldset>
+    </form>
+    </section>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    
+</body> 

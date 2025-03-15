@@ -1,0 +1,239 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+.roboto-uniquifier {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+#hintergrundbild {
+    width: 100vw; /*Breite auf 100%*/
+    height: 100vh; /*Höhre auf 100%*/
+    position: fixed; /*Bild bleibt fix*/
+    top: 0; /*oben ohne rand*/
+    left: 0; /*links ohne rand*/
+    z-index: -1; /*bild hinter "Text"*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+ 
+#hintergrundbild img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*skalierung des ganzen bereiches*/
+}
+
+#text {
+    position: absolute; /*genaue platzierung des textes*/
+    top: 60%; /*vom oberen rand nach unten*/
+    left: 50%; /*von links nach rechts*/
+    transform: translate(-50%, -50%);
+    z-index: 1; /*Text über das bild*/
+    text-align: center; /*zentriert den text horizontal*/
+    width: 50%; /*auf welcher breite sich der Text erstreckt*/
+}
+
+b {
+    font-size: 35px;
+    display: block;
+    color: black;
+}
+
+h1 {
+    padding-top: 120px;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}
+
+.inhalt{
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-color: white;
+    margin-top: 100vh;
+    font-size: 50px;
+}
+
+.bild-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.bild-item img {
+    width: 100%;
+    max-width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+   
+}
+
+ .bild-item img:hover {
+     transform: scale(1.1);
+    }
+
+.bild-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.miet-tabelle-container {
+    width: 100%;
+    overflow-x: auto;
+
+}
+.miet-tabelle {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid black;
+    overflow-x: auto;
+}
+
+.miet-tabelle th, .miet-tabelle td {
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+.miet-tabelle th {
+    background-color: burlywood;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    font-size: 17px;
+    padding: 20px;
+    background: rgb(228, 224, 224);
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: bold;
+    
+}
+
+input, select {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 10px 0;
+    z-index: 1000;
+    color: wheat;
+    border-radius: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        background-color: rgb(0, 0, 0, 0.6);
+        padding: 5px 0;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 1px;
+        font-size: 16px;
+    }
+    h1 {
+        top: 55px;
+        font-size: 30px;
+    }
+    
+    b {
+        font-size: 22px;
+    }
+
+    #text {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .inhalt {
+        font-size: 30px;
+    }
+
+    .bild-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bild-item {
+        max-width: 350px;
+    }
+
+
+}
